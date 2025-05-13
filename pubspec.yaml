@@ -1,0 +1,51 @@
+name: foodwaste
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  image_picker: ^1.1.2
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/banner.png
+    - assets/images/icons/basket.png
+    - assets/images/icons/shoppingbag.png
+    - assets/images/icons/shoppingcart.png
+    - assets/images/icons/forum.png
+    - assets/images/icons/message.png
+    - assets/images/icons/upload.png
+    - assets/images/LimbahAyamTiren.png
+    - assets/images/LimbahMakanan.png
+    - assets/images/LimbahSerabutKelapa.png
+  fonts:
+    - family: PLUSJAKARTASANS
+      fonts:
+        - asset: assets/fonts/PLUSJAKARTASANS-LIGHT.TTF
+          weight: 200
+        - asset: assets/fonts/PLUSJAKARTASANS-LIGHTITALIC.TTF
+          weight: 200
+          style: italic
+        - asset: assets/fonts/PLUSJAKARTASANS-MEDIUM.TTF
+          weight: 400
+        - asset: assets/fonts/PLUSJAKARTASANS-MEDIUMITALIC.TTF
+          weight: 400
+          style: italic
+        - asset: assets/fonts/PLUSJAKARTASANS-BOLD.TTF
+          weight: 600
+        - asset: assets/fonts/PLUSJAKARTASANS-BOLDITALIC.TTF
+          weight: 600
+          style: italic
