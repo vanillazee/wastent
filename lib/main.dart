@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'upload_waste_page.dart';
 import 'jual_limbah_page.dart';
-
-
+import 'buy_waste_page.dart';
 
 void main() {
   runApp(const FoodWasteApp());
@@ -15,7 +13,7 @@ class FoodWasteApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'FoodWaste',
+      title: "Wasten't",
       theme: ThemeData(
         fontFamily: 'PLUSJAKARTASANS-LIGHT',
         primarySwatch: Colors.green,
@@ -73,7 +71,7 @@ class HomePage extends StatelessWidget {
                             color: Colors.white, size: 28),
                         const SizedBox(width: 8),
                         const Expanded(
-                          child: Text("Hello, Danu!",
+                          child: Text("Hello, User!",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontFamily: 'PLUSJAKARTASANS',
@@ -137,10 +135,17 @@ class HomePage extends StatelessWidget {
                             },
                           ),
 
-                          const MenuTile(
+                          MenuTile(
                             title: "Beli Limbah",
                             imagePath: 'assets/images/icons/shoppingcart.png',
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => const BuyWastePage()),
+                              );
+                            },
                           ),
+
                           const MenuTile(
                             title: "Forum",
                             imagePath: 'assets/images/icons/forum.png',
